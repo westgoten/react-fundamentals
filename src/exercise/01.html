@@ -18,16 +18,16 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <div id="root"></div>
-
     <script type="module">
-      const root = document.getElementById('root')
-      const div = document.createElement('div')
+      const rootDiv = document.createElement('div')
+      const containerDiv = document.createElement('div')
 
-      div.innerText = 'Hello World'
-      div.className = 'container'
+      rootDiv.id = 'root'
+      containerDiv.innerText = 'Hello World'
+      containerDiv.className = 'container'
 
-      root.append(div)
+      rootDiv.append(containerDiv)
+      document.body.append(rootDiv)
     </script>
   </body>
 </html>
