@@ -20,16 +20,17 @@
     <script type="module">
       const rootElement = document.getElementById('root')
 
-      const elementType = 'div'
-      const elementProps = {className: 'container'}
-      const elementChildren = 'Hello World'
-      const element = React.createElement(
-        elementType,
-        elementProps,
-        elementChildren,
+      const firstMessage = React.createElement('span', null, 'Hello')
+      const secondMessage = React.createElement('span', null, 'World')
+      const container = React.createElement(
+        'div',
+        {className: 'container'},
+        firstMessage,
+        ' ',
+        secondMessage,
       )
 
-      ReactDOM.render(element, rootElement)
+      ReactDOM.render(container, rootElement)
     </script>
   </body>
 </html>
