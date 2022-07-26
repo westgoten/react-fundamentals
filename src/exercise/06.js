@@ -23,7 +23,11 @@ function UsernameForm({onSubmitUsername}) {
       <button className="submitButton" type="submit" disabled={!!error}>
         Submit
       </button>
-      {error && <p className="errorMessage">{error}</p>}
+      {error && (
+        <p className="errorMessage" role="alert">
+          {error}
+        </p>
+      )}
     </form>
   )
 
