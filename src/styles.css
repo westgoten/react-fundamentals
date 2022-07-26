@@ -39,3 +39,17 @@
   width: 100px;
   text-align: right;
 }
+
+.form {
+  padding: 16px;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.875em;
+  margin: 8px 0;
+}
+
+.submitButton {
+  margin-top: 8px;
+}
